@@ -14,7 +14,7 @@ The following software should get installed:
 ## Create a local dev environment
 
 * clone the repository (TODO: link to repo url)
-* Open Sources/StudioReceptionistAI.sln in visual studio
+* Open StudioReceptionistAI.sln in visual studio
 * Build
 
 > You have maybe manually to trigger the "npm install" task in the StudioReceptionistAI.UI solution by right clicking on npm folder and choosing "Install missing NPM packages".
@@ -38,9 +38,21 @@ After you started the project:
 
 The solution consists of the following projects:
 
-* StudioReceptionistAI.UI - React Application
-* StudioReceptionistAI.API - Web API Project
-* StudioReceptionistAI.API.Tests -  Unit test project for Web API
+* Capgemini.StudioReceptionist.UI - React Application
+* Capgemini.StudioReceptionist.API - Web API Project
+* Capgemini.StudioReceptionist.API.Tests -  Unit test project for Web API
+
+### Capgemini.StudioReceptionist.UI
+
+Frontend for the receptionist project.
+
+Technologies:
+
+* Typescript
+* NPM
+* Webpack
+* React
+* Babel
 
 ## Build process
 

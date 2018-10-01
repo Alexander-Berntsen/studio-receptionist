@@ -22,7 +22,7 @@ namespace Capgemini.StudioReceptionist.API
 
 #if DEBUG
             Directory.SetCurrentDirectory(Server.MapPath("~"));
-            process = Process.Start("CMD.exe", "/Kcd ..\\StudioReceptionistAI.UI && yarn start");
+            process = Process.Start("CMD.exe", "/Kcd ..\\Capgemini.StudioReceptionist.UI && npm start");
             Process.Start("cmd", "/C start http://localhost:8080");
 #endif
         }

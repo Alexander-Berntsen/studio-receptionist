@@ -1,4 +1,25 @@
-<h1><b>Studio Receptionist</b></h1>
+h1><b>Studio Receptionist</b></h1>
+
+# TOC
+
+<!-- TOC -->
+
+- [TOC](#toc)
+- [Contributors guide](#contributors-guide)
+    - [Prerequisits](#prerequisits)
+    - [Create a local dev environment](#create-a-local-dev-environment)
+    - [Run the project](#run-the-project)
+    - [Project and solution structure](#project-and-solution-structure)
+        - [Capgemini.StudioReceptionist.UI](#capgeministudioreceptionistui)
+            - [Project structure](#project-structure)
+            - [NPM commands](#npm-commands)
+            - [Concepts](#concepts)
+                - [SASS and styles](#sass-and-styles)
+        - [Capgemini.StudioReceptionist.API](#capgeministudioreceptionistapi)
+    - [Build process](#build-process)
+    - [Unit testing vs. integration testing](#unit-testing-vs-integration-testing)
+
+<!-- /TOC -->
 
 # Contributors guide
 
@@ -53,6 +74,43 @@ Technologies:
 * Webpack
 * React
 * Babel
+
+#### Project structure
+
+> Main folder: Capgemini.StudioReceptionist.UI
+
+* Folder ***src*** contains the react application
+* Folder ***config*** contains several configurations like webpack
+
+#### NPM commands
+
+Command | Description
+--- | ---
+`npm start` | Build app continuously (HMR enabled) and serve @ `http://localhost:8080`
+`npm run start-prod` | Build app once (HMR disabled) and serve @ `http://localhost:3000`
+`npm run build` | Build app to `/dist/`
+`npm run test` | Run tests
+`npm run lint` | Run Typescript and SASS linter
+`npm run lint:ts` | Run Typescript linter
+`npm run lint:sass` | Run SASS linter
+`npm run start` | (alias of `npm run start-dev`)
+
+#### Concepts
+
+##### SASS and styles
+
+A sass processor is already implemented. You can use sass notation for writing scss files. You should read more about SASS [here](https://sass-lang.com/).
+
+Use [BEM](http://getbem.com/introduction/) as naming convention in CSS will save your life, so use it! Once understood, finding CSS in your sass files will be very easy.
+
+### Capgemini.StudioReceptionist.API
+
+Web API project for serving the backend.
+
+Technologies:
+
+* ASP.NET MVC WebApi
+* C# 4.7
 
 ## Build process
 

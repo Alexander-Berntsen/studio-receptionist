@@ -97,11 +97,17 @@ Command | Description
 
 #### Concepts
 
+##### Environments
+
+When building with webpack, we implemented several environments.
+
 ##### SASS and styles
 
 A sass processor is already implemented. You can use sass notation for writing scss files. You should read more about SASS [here](https://sass-lang.com/).
 
 Use [BEM](http://getbem.com/introduction/) as naming convention in CSS will save your life, so use it! Once understood, finding CSS in your sass files will be very easy.
+
+> Modules: Encapsulate the component css into sass modules as shown with the Application module. src/assets/scss/App.scss is used as the main entry point for the sass compiler.
 
 ### Capgemini.StudioReceptionist.API
 

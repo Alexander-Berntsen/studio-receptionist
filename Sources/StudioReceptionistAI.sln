@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudioReceptionistAI.API", "StudioReceptionistAI.API\StudioReceptionistAI.API.csproj", "{3F472A4A-6D83-44F9-AE29-0B038E733FDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudioReceptionistAI.API.Tests", "StudioReceptionistAI.API.Tests\StudioReceptionistAI.API.Tests.csproj", "{173B9125-D8E5-4123-9DE0-001E8A8A0B93}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F472A4A-6D83-44F9-AE29-0B038E733FDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F472A4A-6D83-44F9-AE29-0B038E733FDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F472A4A-6D83-44F9-AE29-0B038E733FDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F472A4A-6D83-44F9-AE29-0B038E733FDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{173B9125-D8E5-4123-9DE0-001E8A8A0B93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{173B9125-D8E5-4123-9DE0-001E8A8A0B93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{173B9125-D8E5-4123-9DE0-001E8A8A0B93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{173B9125-D8E5-4123-9DE0-001E8A8A0B93}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {39A5EB07-77CB-4DB4-940F-C2C506811F14}
+	EndGlobalSection
+EndGlobal

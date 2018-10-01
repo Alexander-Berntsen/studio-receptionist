@@ -12,7 +12,7 @@ export default class App extends React.Component<AppProps, undefined> {
             <div className="app">
                 <h1>Hello Studio Receptionist AI!</h1>
                 <p className="app__wall">Foo to the barz</p>
-                <img src={reactLogo} height="480"/>
+                <img src={reactLogo} className="app__logo"/>
             </div>
         );
     }

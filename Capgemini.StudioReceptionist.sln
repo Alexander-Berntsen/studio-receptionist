@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Capgemini.StudioReceptionistAI.UI", "StudioReceptionistAI.UI\Capgemini.StudioReceptionistAI.UI.njsproj", "{96926AD7-BA4B-40A9-B76E-98E9FFF6A284}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capgemini.StudioReceptionist.API", "Capgemini.StudioReceptionist.API\Capgemini.StudioReceptionist.API.csproj", "{03437A4F-D6C1-454B-B0A6-9E36EA6235D1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capgemini.StudioReceptionist.API.Tests", "Capgemini.StudioReceptionist.API.Tests\Capgemini.StudioReceptionist.API.Tests.csproj", "{EDF9FCEC-C522-41EB-AD75-BD64D0914EA4}"
@@ -14,16 +12,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}") = "Capgemini.StudioReceptionist.UI", "Capgemini.StudioReceptionist.UI\Capgemini.StudioReceptionist.UI.njsproj", "{96926AD7-BA4B-40A9-B76E-98E9FFF6A284}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{96926AD7-BA4B-40A9-B76E-98E9FFF6A284}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{96926AD7-BA4B-40A9-B76E-98E9FFF6A284}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{96926AD7-BA4B-40A9-B76E-98E9FFF6A284}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{96926AD7-BA4B-40A9-B76E-98E9FFF6A284}.Release|Any CPU.Build.0 = Release|Any CPU
 		{03437A4F-D6C1-454B-B0A6-9E36EA6235D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{03437A4F-D6C1-454B-B0A6-9E36EA6235D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03437A4F-D6C1-454B-B0A6-9E36EA6235D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -32,6 +28,10 @@ Global
 		{EDF9FCEC-C522-41EB-AD75-BD64D0914EA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDF9FCEC-C522-41EB-AD75-BD64D0914EA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDF9FCEC-C522-41EB-AD75-BD64D0914EA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96926AD7-BA4B-40A9-B76E-98E9FFF6A284}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96926AD7-BA4B-40A9-B76E-98E9FFF6A284}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96926AD7-BA4B-40A9-B76E-98E9FFF6A284}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96926AD7-BA4B-40A9-B76E-98E9FFF6A284}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

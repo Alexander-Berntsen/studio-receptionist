@@ -11,7 +11,8 @@ export default class App extends React.Component<AppProps, undefined> {
         return (
             <div className="app">
                 <h1>Hello Studio Receptionist AI!</h1>
-                <p className="app__wall">Foo to the barz</p>
+                <p className="app__wall">Build Environment: {ENV}</p>
+                <p className="app__wall">Configuration: {JSON.stringify(CONFIG)}</p>
                 <img src={reactLogo} className="app__logo"/>
             </div>
         );

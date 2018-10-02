@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{96926ad7-ba4b-40a9-b76e-98e9fff6a284}</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <ProjectView>ShowAllFiles</ProjectView>
+    <ProjectView>ProjectFiles</ProjectView>
     <StartupFile />
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -25,6 +25,7 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
   <ItemGroup>
+    <Content Include="configs\frontend\production.config.json" />
     <Content Include="package-lock.json" />
     <Content Include="package.json" />
     <Content Include="src\assets\scss\App.scss" />
@@ -37,6 +38,7 @@
     <Content Include="README.md" />
     <Content Include="configs\jest.json" />
     <Content Include="src\index.html.ejs" />
+    <TypeScriptCompile Include="src\global.d.ts" />
     <TypeScriptCompile Include="src\index.tsx" />
     <TypeScriptCompile Include="tests\App.test.tsx" />
     <TypeScriptCompile Include="src\components\App.tsx" />
@@ -44,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="configs" />
+    <Folder Include="configs\frontend\" />
     <Folder Include="configs\webpack" />
     <Folder Include="src" />
     <Folder Include="src\assets" />
@@ -55,6 +58,9 @@
     <Folder Include="tests\__mocks__" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="configs\frontend\development.config.json">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="configs\jest.preprocessor.js" />
     <Compile Include="configs\webpack\common.js" />
     <Compile Include="configs\webpack\dev.js" />

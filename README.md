@@ -99,7 +99,13 @@ Command | Description
 
 ##### Environments
 
-When building with webpack, we implemented several environments.
+When building with webpack, we implemented several environments. Before the webpack build is start, an environment variable ENVIRONMENT can be set to determine the target build environment. For local development it is 'development' for example. In Typescript then you have a global variable ENV which contains these string, so you can differentiate the UI regarding to the build environment.
+
+##### Configuration
+
+In the folder configs/frontend you can find the frontend congigurations for the several environments. This config is made public to the typescript app over the global variable CONFIG (with the help of the Webpack Define Plugins).
+
+If you want to add a configuration property, add the new property into the configuration json under configs/frontend and adjust IFrontendConfig interface in src/global.d.ts to make the new property visible in typescript.
 
 ##### SASS and styles
 

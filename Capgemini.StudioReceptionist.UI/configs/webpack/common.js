@@ -3,6 +3,18 @@ const {resolve} = require('path');
 const {CheckerPlugin} = require('awesome-typescript-loader');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const DefinePlugin = require('webpack/lib/DefinePlugin');
+
+// Get the current build environment from the system settings
+const ENV = (!!process.env.ENVIRONMENT ? process.env.ENVIRONMENT : 'development').trim();
+// Read out the correct configuration for the frontend which is set as the variable CONFIG
+const FRONTEND_CONFIG = require('./../frontend/' + ENV + '.config.json');
+
+const DEFINE = {
+    ENV: JSON.stringify(ENV),
+    CONFIG: JSON.stringify(FRONTEND_CONFIG)
+};
+console.log('Define client constants: ' + JSON.stringify(DEFINE));
 
 module.exports = {
   resolve: {
@@ -41,10 +53,11 @@ module.exports = {
       },
     ],
   },
-  plugins: [
-    new CheckerPlugin(),
-    new StyleLintPlugin(),
-    new HtmlWebpackPlugin({template: 'index.html.ejs',})
+    plugins: [
+        new DefinePlugin(DEFINE),
+        new CheckerPlugin(),
+        new StyleLintPlugin(),
+        new HtmlWebpackPlugin({template: 'index.html.ejs',})
   ],
   externals: {
     'react': 'React',

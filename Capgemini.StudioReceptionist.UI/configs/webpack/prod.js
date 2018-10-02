@@ -14,8 +14,5 @@ module.exports = merge(commonConfig, {
   },
   devtool: 'source-map',
   plugins: [
-    new webpack.DefinePlugin({
-      ENV: 'production'
-    })
   ],
 });

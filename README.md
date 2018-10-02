@@ -14,6 +14,8 @@
             - [Project structure](#project-structure)
             - [NPM commands](#npm-commands)
             - [Concepts](#concepts)
+                - [Environments](#environments)
+                - [Configuration](#configuration)
                 - [SASS and styles](#sass-and-styles)
         - [Capgemini.StudioReceptionist.API](#capgeministudioreceptionistapi)
     - [Build process](#build-process)
@@ -81,6 +83,8 @@ Technologies:
 
 * Folder ***src*** contains the react application
 * Folder ***config*** contains several configurations like webpack
+    * Folder **frontend**: Configurations per environment for the frontend
+    * Folder **webpack**: Webpack Configurations per environment
 
 #### NPM commands
 

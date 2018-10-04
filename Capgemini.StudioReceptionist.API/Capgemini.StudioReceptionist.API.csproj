@@ -281,6 +281,16 @@
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Capgemini.StudioReceptionist.BL\Capgemini.StudioReceptionist.BL.csproj">
+      <Project>{fcfb18a1-77f9-4c9b-b21c-18114fc6d0f2}</Project>
+      <Name>Capgemini.StudioReceptionist.BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Capgemini.StudioReceptionist.Core\Capgemini.StudioReceptionist.Core.csproj">
+      <Project>{7c2d664d-b841-474a-b906-71d277664485}</Project>
+      <Name>Capgemini.StudioReceptionist.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

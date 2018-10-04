@@ -1,0 +1,26 @@
+@startuml SolutionStructure
+
+component "Core" as core
+    note right of core
+        Interfaces for IOC
+        Data Access Objects
+        Data Transfer Objects
+        Entities
+    end note
+component "BL" as bl
+    bl --> core : Ref
+component "API" as api
+    note right of api
+        MVC Application
+        Application Bootstrap / IOC registration
+    end note
+    api ..> bl : DI
+    api --> core : Ref
+component "FaceRecognition" as fr
+    api ..> fr : DI
+    fr --> core : Ref
+component "SharePoint" as sp
+    api ..> sp : DI
+    sp --> core : Ref
+
+@enduml

@@ -17,7 +17,8 @@
                 - [Environments](#environments)
                 - [Configuration](#configuration)
                 - [SASS and styles](#sass-and-styles)
-        - [Capgemini.StudioReceptionist.API](#capgeministudioreceptionistapi)
+        - [Capgemini.StudioReceptionist Backend](#capgeministudioreceptionist-backend)
+            - [Solution Structure](#solution-structure)
     - [Build process](#build-process)
     - [Unit testing vs. integration testing](#unit-testing-vs-integration-testing)
 
@@ -119,14 +120,25 @@ Use [BEM](http://getbem.com/introduction/) as naming convention in CSS will save
 
 > Modules: Encapsulate the component css into sass modules as shown with the Application module. src/assets/scss/App.scss is used as the main entry point for the sass compiler.
 
-### Capgemini.StudioReceptionist.API
+### Capgemini.StudioReceptionist Backend
 
-Web API project for serving the backend.
+Backend Implementations for StudioReceptionist.
 
 Technologies:
 
 * ASP.NET MVC WebApi
 * C# 4.7
+
+#### Solution Structure
+
+![SolutionStructure](Docs/SolutionStructure.svg)
+
+Notice the following things in picture above:
+
+* All projects containing refernces to the Core library, which contains the IOC/DI interfaces, Data Transfer objects and common things needed in all assemblies.
+* The BL project contains the service layer of the application and the business layer. All components which are used outside the assembly are implementing a interface in Core and are used with IOC mechanism in the API project.
+* Then there are several functional assemblies which implementing interfaces too to get used from outside the assembly and registered and used with the IOC container in  the API project.
+* The API project wraps all that up, by bootstrapping the IOC, register all components and implements the MVC specific things.
 
 ## Build process
 

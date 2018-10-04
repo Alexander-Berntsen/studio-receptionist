@@ -140,6 +140,9 @@ Notice the following things in picture above:
 * Then there are several functional assemblies which implementing interfaces too to get used from outside the assembly and registered and used with the IOC container in  the API project.
 * The API project wraps all that up, by bootstrapping the IOC, register all components and implements the MVC specific things.
 
+> IOC/DI is the base to get this structure. By using only the shared interfaces for the communication between the assemblies, and using IOC to hide the implementation behind it, the project folder of the solution avoids having reference roundtrips between them.
+
+
 ## Build process
 
 ## Unit testing vs. integration testing

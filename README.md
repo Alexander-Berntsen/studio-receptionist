@@ -142,6 +142,16 @@ Notice the following things in picture above:
 
 > IOC/DI is the base to get this structure. By using only the shared interfaces for the communication between the assemblies, and using IOC to hide the implementation behind it, the project folder of the solution avoids having reference roundtrips between them.
 
+#### Concepts
+
+##### Inversion of Control & Dependency Injection
+IoC and DI are utilized to modularize the application. Through IoC and DI the application is reliant on interfaces rather than the actual classes. The sought after objects are then given/injected at run time. To pass the wanted object during runtime, the object has to be bound to respective compatible interfaces. In the applicaiton, this is done with the help of Autofac.
+
+###### Autofac
+
+With Autofac a "ContainerBuilder" can be defined which allows the binding of classes to interfaces. In the application this is done in a autofac configuration file in the Api project under App_Start. By binding components, the specified class will be instansiated whenever the specified interface is called. 
+
+To initialize Autofac the configuration mentioned above needs to be initialized. This is also done in a class file in the App_Start folder. The Autofac configuration file includes an initialization method that registers the "ContainerBuilder". Autofac is in the application initialized in the Bootstrapper.cs which calls the Initialize method of the Autofac configuraiton file.
 
 ## Build process
 

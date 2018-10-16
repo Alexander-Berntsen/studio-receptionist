@@ -19,6 +19,8 @@
                 - [SASS and styles](#sass-and-styles)
         - [Capgemini.StudioReceptionist Backend](#capgeministudioreceptionist-backend)
             - [Solution Structure](#solution-structure)
+            - [Backend Concepts](#backend-concepts)
+            - [Inversion of Control & Dependency Injection](#inversion-of-control-and-dependency-injection)
     - [Build process](#build-process)
     - [Unit testing vs. integration testing](#unit-testing-vs-integration-testing)
 
@@ -142,9 +144,24 @@ Notice the following things in picture above:
 
 > IOC/DI is the base to get this structure. By using only the shared interfaces for the communication between the assemblies, and using IOC to hide the implementation behind it, the project folder of the solution avoids having reference roundtrips between them.
 
-#### Concepts
+#### Backend Concepts
 
-##### Inversion of Control & Dependency Injection
+##### n-Tier Architecture
+The software architecture pattern used in the application is the n-tier architecture. The architecture focuses on separating the user interface, business logic, storage and data access. 
+
+###### Presentation Tier
+The presentation tier is the top-most layer of the applicaiton. This is the layer which the users comunicate with. In our application this would reflect to the exposed methods in the controllers in the api project. 
+
+###### Application Tier
+The application tier handles the applications business logic such as evaluations, calculations, logical decisions and also moves data between the layers.
+
+###### Data Tier
+The data tier is where information is stored and retrieved.  
+
+##### Unit of Work
+Unit of Work is a design pattern which acts as a abstraction layer between the application tier and data tier. 
+
+##### Inversion of Control and Dependency Injection
 IoC and DI are utilized to modularize the application. Through IoC and DI the application is reliant on interfaces rather than the actual classes. The sought after objects are then given/injected at run time. To pass the wanted object during runtime, the object has to be bound to respective compatible interfaces. In the applicaiton, this is done with the help of Autofac.
 
 ###### Autofac

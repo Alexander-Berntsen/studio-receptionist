@@ -144,6 +144,14 @@ Notice the following things in picture above:
 
 > IOC/DI is the base to get this structure. By using only the shared interfaces for the communication between the assemblies, and using IOC to hide the implementation behind it, the project folder of the solution avoids having reference roundtrips between them.
 
+##### Core
+As can be seen above, the core project contains all entities and interfaces. These are ordered in folders depending on which project they belong to (e.g. Core > FacialRecognition > Interfaces (or Entities)). The project contains three folders, FacialRecognition, SharePoint, and Guest. 
+##### Facial Recognition
+Each project (FacialRecognition, SharePoint, Guest) contains implementations of the interfaces. The FacialRecognition project contains a manager and repository. Where the managers responsibility is to handle the flow of requests, and the repository to perform actions towards the facial recognition service such as registrating a person, adding a face to a person, identifying a preson etc.
+##### Guest
+Guests contains GuestService and GuestManager. The service is responsible for handling requests from the controller and is responsible for the error handling. The requests are passed on to the manager which can communicate with both FacialRecognition service and SharePoint depending.
+##### SharePoint
+The sharepoint project simply contains a repository for gathering guest information from a list, creating a guest, checking in and out a guest. 
 #### Backend Concepts
 
 ##### n-Tier Architecture

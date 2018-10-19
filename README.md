@@ -152,6 +152,8 @@ Each project (FacialRecognition, SharePoint, Guest) contains implementations of 
 Guests contains GuestService and GuestManager. The service is responsible for handling requests from the controller and is responsible for the error handling. The requests are passed on to the manager which can communicate with both FacialRecognition service and SharePoint depending.
 ##### SharePoint
 The sharepoint project simply contains a repository for gathering guest information from a list, creating a guest, checking in and out a guest. 
+##### Credentials
+For both SharePoint and Azure, credentials are needed. These are set within the core project within respective entity folders. For Azure, an Api key and base url is needed. For Share Point a username, password and site (url to SharePoint site) is needed. The username which is given must have access to the specified SharePointSite.
 #### Backend Concepts
 
 ##### n-Tier Architecture
